@@ -15,7 +15,7 @@
   />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://giryeong1234.github.io/giryeong/" />
-  <meta name="theme-color" content="#1F4E3D" />
+  <meta name="theme-color" content="#8B6443" />
   <link rel="canonical" href="https://giryeong1234.github.io/giryeong/" />
   <script type="application/ld+json">
     {
@@ -42,16 +42,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..500&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css?v=2" />
   <script>
     (function () {
       try {
         var saved = localStorage.getItem("gp-theme");
-        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-        var theme = saved || (prefersDark ? "dark" : "light");
+        var theme = saved === "dark" ? "dark" : "light";
         document.documentElement.setAttribute("data-theme", theme);
       } catch (e) {}
     })();
