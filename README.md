@@ -10,8 +10,11 @@ Personal academic & professional portfolio website for **Giryeong (Daniel) Park*
 - `styles.css` — Responsive light/dark design system
 - `script.js` — Theme switcher, experience category filter, mobile navigation, scrollspy, and reveal animations
 - `favicon.svg` — Monogram SVG icon
-- `.github/workflows/deploy-pages.yml` — Automated GitHub Pages deployment on every push to `main`
 - `.nojekyll` — Serves static assets directly on GitHub Pages
+
+## Source of Truth & Deployment
+
+The `gh-pages` branch is the single source of truth for this site, deployed directly from `/root` to GitHub Pages.
 
 ## Local Preview
 
@@ -23,4 +26,4 @@ npx serve .
 
 ## Updating Content
 
-Edit `index.html` directly and push to `main` — GitHub Actions will automatically redeploy the site to GitHub Pages.
+Edit `index.html` (or `styles.css` / `script.js`) on `gh-pages` and push — GitHub Pages automatically updates the live site.
