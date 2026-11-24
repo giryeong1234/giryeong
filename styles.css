@@ -901,7 +901,7 @@ button {
 /* Projects */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
 }
 
@@ -1336,5 +1336,110 @@ button {
 
   .contact-box {
     padding: 36px 24px;
+  }
+}
+
+/* Scroll Progress Bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), var(--warm));
+  transition: width 0.08s linear;
+  pointer-events: none;
+}
+
+/* Language Toggle Button */
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 12px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.lang-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* Project External Link */
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  margin-bottom: 14px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.project-link:hover {
+  color: var(--accent-hover);
+  transform: translateX(3px);
+}
+
+/* Print / Save CV Stylesheet */
+@media print {
+  :root,
+  [data-theme="dark"] {
+    --bg: #ffffff;
+    --bg-alt: #ffffff;
+    --surface: #ffffff;
+    --surface-subtle: #ffffff;
+    --border: #d8d8d8;
+    --text: #111111;
+    --text-secondary: #333333;
+    --text-muted: #555555;
+    --accent: #1f4e3d;
+  }
+
+  .scroll-progress,
+  .site-header,
+  .hero-ambient,
+  .hero-actions,
+  .filter-bar,
+  .contact-section,
+  .site-footer {
+    display: none !important;
+  }
+
+  body {
+    font-size: 11pt;
+    line-height: 1.45;
+  }
+
+  .section,
+  .hero {
+    padding: 18px 0 !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .exp-card,
+  .project-card,
+  .lead-card,
+  .edu-card,
+  .highlight-card,
+  .hero-card {
+    box-shadow: none !important;
+    break-inside: avoid;
   }
 }
