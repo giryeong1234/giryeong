@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://giryeong1234.github.io/giryeong/sitemap.xml
