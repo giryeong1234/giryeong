@@ -44,7 +44,7 @@
 
   // 3. Experience Category Filter
   const filterButtons = Array.from(document.querySelectorAll(".filter-btn"));
-  const expCards = Array.from(document.querySelectorAll("#experience-list .exp-card"));
+  const expEntries = Array.from(document.querySelectorAll("#experience-list .exp-entry"));
 
   filterButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
@@ -56,18 +56,18 @@
         other.setAttribute("aria-selected", String(active));
       });
 
-      expCards.forEach(function (card) {
-        const category = card.getAttribute("data-category");
+      expEntries.forEach(function (entry) {
+        const category = entry.getAttribute("data-category");
         const shouldShow = filter === "all" || category === filter;
-        card.classList.toggle("is-hidden", !shouldShow);
+        entry.classList.toggle("is-hidden", !shouldShow);
         if (shouldShow) {
-          card.classList.add("is-visible");
+          entry.classList.add("is-visible");
         }
       });
     });
   });
 
-  // 4. Scroll Reveal
+  // 4. Subtle Scroll Reveal
   const revealEls = Array.from(document.querySelectorAll(".reveal"));
   if ("IntersectionObserver" in window) {
     const revealObserver = new IntersectionObserver(
@@ -79,7 +79,7 @@
           }
         });
       },
-      { threshold: 0.08, rootMargin: "0px 0px -32px 0px" }
+      { threshold: 0.06, rootMargin: "0px 0px -24px 0px" }
     );
 
     revealEls.forEach(function (el) {
@@ -110,7 +110,7 @@
           });
         });
       },
-      { rootMargin: "-35% 0px -55% 0px", threshold: 0 }
+      { rootMargin: "-30% 0px -60% 0px", threshold: 0 }
     );
 
     sections.forEach(function (sec) {
@@ -124,7 +124,7 @@
     yearEl.textContent = String(Math.max(2026, new Date().getFullYear()));
   }
 
-  // 7. Scroll Progress Bar
+  // 7. Scroll Progress Hairline
   const progressBar = document.getElementById("scroll-progress");
   if (progressBar) {
     const updateProgress = function () {
@@ -145,80 +145,104 @@
     });
   }
 
-  // 9. Bilingual EN / KO Language Toggle
+  // 9. Bilingual EN / KO Switcher
   const langToggle = document.getElementById("lang-toggle");
   const i18n = {
     en: {
-      "nav.about": "About",
       "nav.experience": "Experience",
-      "nav.projects": "Projects",
       "nav.leadership": "Leadership",
+      "nav.projects": "Projects",
+      "nav.about": "Profile",
       "nav.education": "Education",
       "nav.highlights": "Highlights",
+      "nav.connect": "Connect",
       "hero.status": "Undergraduate Research Fellow · Monash University",
       "hero.degree": "Bachelor of Nutrition Science",
       "hero.location": "Melbourne, Australia",
       "hero.lead":
-        "Second-year Bachelor of Nutrition Science student at <strong>Monash University</strong> with experience across nutrition education, food-service operations, and student leadership. Passionate about <em>evidence-based practice</em>, chrononutrition research, and building healthier student communities.",
-      "hero.linkedin": "LinkedIn Profile",
+        "Nutrition Science undergraduate and Summer Vacation Research Scholar at <strong>Monash University</strong>, combining <em>chrononutrition research</em>, bilingual Korean&ndash;English interpreting, and hands-on operational leadership across Australia, South Korea, and Cambodia.",
+      "hero.linkedin": "LinkedIn",
       "hero.print": "Print / Save CV",
-      "hero.explore": "Explore Experience",
-      "about.eyebrow": "01 · Profile",
-      "about.title": "Bridging nutrition science, practical food literacy, and people-first leadership.",
-      "exp.eyebrow": "02 · Experience",
-      "exp.title": "Research, interpreting, and hospitality leadership.",
-      "exp.filter.all": "All",
-      "exp.filter.research": "Research & Consulting",
+      "dossier.eyebrow": "Current Dossier",
+      "dossier.research": "Research",
+      "dossier.institution": "Institution",
+      "dossier.governance": "Governance",
+      "dossier.languages": "Languages",
+      "metric.scholar": "Summer Vacation Research Fellowship",
+      "metric.countries": "Work experience across AU, KR & KH",
+      "metric.bilingual": "Bilingual & KOTRA B2B Interpreter",
+      "metric.roles": "SEEC, MNDS Treasurer, AIS & UMAC",
+      "exp.eyebrow": "Experience",
+      "exp.title": "Research, B2B interpreting, and operational leadership.",
+      "exp.filter.all": "All Roles",
+      "exp.filter.research": "Research & Interpreting",
       "exp.filter.ops": "Hospitality & Operations",
-      "proj.eyebrow": "03 · Featured Projects",
-      "proj.title": "Community initiatives turning nutrition and education into action.",
-      "lead.eyebrow": "04 · Leadership & Volunteering",
-      "lead.title": "Serving the Monash student and nutrition community.",
-      "edu.eyebrow": "05 · Education & Credentials",
-      "edu.title": "Academic foundation and continuous learning.",
-      "high.eyebrow": "06 · Recent Highlights",
+      "lead.eyebrow": "Leadership & Governance",
+      "lead.title": "Representing students and stewarding the Monash nutrition community.",
+      "proj.eyebrow": "Selected Projects",
+      "proj.title": "Translating nutrition science, web tools, and education into practice.",
+      "about.eyebrow": "Profile & Focus",
+      "about.title": "Bridging clinical nutrition science, food literacy, and operational discipline.",
+      "cap.skills": "Core Competencies",
+      "cap.languages": "Languages",
+      "edu.eyebrow": "Education & Credentials",
+      "edu.title": "Academic foundation and continuous professional learning.",
+      "high.eyebrow": "Recent Dispatches",
       "high.title": "Stories and milestones from campus & community.",
-      "contact.eyebrow": "Let’s Connect",
+      "contact.eyebrow": "Correspondence",
       "contact.title": "Open to nutrition research collaborations, community initiatives, and graduate opportunities.",
-      "contact.desc": "Whether you’re researching chrononutrition, building food literacy programs, or connecting across Monash and Melbourne’s nutrition community, I’d love to hear from you.",
+      "contact.desc":
+        "Whether you’re researching chrononutrition, developing food literacy programs, or connecting across Monash and Melbourne’s nutrition community, I’d welcome a conversation.",
       "contact.linkedin": "Message on LinkedIn",
-      "contact.github": "Follow on GitHub"
+      "contact.github": "GitHub Profile"
     },
     ko: {
-      "nav.about": "소개",
       "nav.experience": "경력",
-      "nav.projects": "프로젝트",
       "nav.leadership": "리더십",
+      "nav.projects": "프로젝트",
+      "nav.about": "프로필",
       "nav.education": "학력",
-      "nav.highlights": "하이라이트",
+      "nav.highlights": "소식",
+      "nav.connect": "연락하기",
       "hero.status": "학부 연구 펠로우 · 모나쉬 대학교 (Monash University)",
       "hero.degree": "영양학 학사 (Bachelor of Nutrition Science)",
       "hero.location": "호주 멜버른",
       "hero.lead":
-        "<strong>모나쉬 대학교(Monash University)</strong> 영양학 학사 2학년으로, 영양 교육, F&amp;B 운영 및 학생 리더십 경험을 보유하고 있습니다. <em>근거 기반 영양학</em>, 시간영양학(Chrononutrition) 연구, 그리고 건강한 학생 커뮤니티 구축에 열정을 가지고 있습니다.",
-      "hero.linkedin": "LinkedIn 프로필",
+        "<strong>모나쉬 대학교(Monash University)</strong> 영양학 학사 및 하계 연구 장학생으로, <em>시간영양학(Chrononutrition) 연구</em>, 한영 B2B 통역, 그리고 호주·한국·캄보디아에서의 현장 운영 리더십 경험을 결합해 나가고 있습니다.",
+      "hero.linkedin": "LinkedIn",
       "hero.print": "CV 인쇄 / PDF 저장",
-      "hero.explore": "경력 살펴보기",
-      "about.eyebrow": "01 · 프로필 소개",
-      "about.title": "영양학 연구, 실용적 식생활 교육, 그리고 사람 중심 리더십의 연결.",
-      "exp.eyebrow": "02 · 주요 경력",
-      "exp.title": "연구, 통역, 그리고 F&amp;B 운영 리더십 경험.",
-      "exp.filter.all": "전체",
-      "exp.filter.research": "연구 &amp; 컨설팅",
-      "exp.filter.ops": "F&amp;B &amp; 운영",
-      "proj.eyebrow": "03 · 주요 프로젝트",
-      "proj.title": "영양학과 교육을 실천으로 연결하는 커뮤니티 프로젝트.",
-      "lead.eyebrow": "04 · 리더십 및 봉사활동",
-      "lead.title": "모나쉬 학생 및 영양학 커뮤니티를 위한 활동.",
-      "edu.eyebrow": "05 · 학력 및 자격",
-      "edu.title": "학문적 기반과 지속적인 성장.",
-      "high.eyebrow": "06 · 최근 하이라이트",
-      "high.title": "캠퍼스와 커뮤니티에서의 주요 소식.",
+      "dossier.eyebrow": "핵심 프로필 요약",
+      "dossier.research": "연구",
+      "dossier.institution": "소속",
+      "dossier.governance": "교내 활동",
+      "dossier.languages": "언어",
+      "metric.scholar": "하계 연구 장학 펠로우십 (Monash)",
+      "metric.countries": "호주 · 한국 · 캄보디아 실무 경험",
+      "metric.bilingual": "한영 이중언어 및 KOTRA B2B 통역",
+      "metric.roles": "SEEC · MNDS 재무 · AIS · UMAC",
+      "exp.eyebrow": "주요 경력",
+      "exp.title": "연구, B2B 통역, 그리고 현장 운영 리더십.",
+      "exp.filter.all": "전체 경력",
+      "exp.filter.research": "연구 & 통역",
+      "exp.filter.ops": "F&B & 운영",
+      "lead.eyebrow": "리더십 및 거버넌스",
+      "lead.title": "학생 대표이자 모나쉬 영양학 커뮤니티의 실무 리더.",
+      "proj.eyebrow": "주요 프로젝트",
+      "proj.title": "영양학 지식, 웹 플랫폼, 그리고 교육을 실천으로 연결.",
+      "about.eyebrow": "프로필 및 전문 분야",
+      "about.title": "임상 영양학, 식생활 문해력, 그리고 운영 역량의 결합.",
+      "cap.skills": "핵심 역량",
+      "cap.languages": "구사 언어",
+      "edu.eyebrow": "학력 및 자격",
+      "edu.title": "학문적 기반과 지속적인 전문 역량 개발.",
+      "high.eyebrow": "최근 소식",
+      "high.title": "캠퍼스와 커뮤니티에서의 주요 기록.",
       "contact.eyebrow": "연락하기",
       "contact.title": "영양학 연구 협업, 커뮤니티 프로젝트 및 졸업 후 기회에 열려 있습니다.",
-      "contact.desc": "시간영양학 연구, 식생활 문해력(Food Literacy) 프로그램, 또는 모나쉬·멜버른 영양학 커뮤니티 협업에 관심이 있으시다면 언제든 편하게 연락해 주세요.",
-      "contact.linkedin": "LinkedIn으로 메시지 보내기",
-      "contact.github": "GitHub 팔로우"
+      "contact.desc":
+        "시간영양학 연구, 식생활 문해력 프로그램, 또는 모나쉬·멜버른 영양학 커뮤니티 협업에 관심이 있으시다면 언제든 편하게 연락해 주세요.",
+      "contact.linkedin": "LinkedIn 메시지 보내기",
+      "contact.github": "GitHub 프로필"
     }
   };
 

@@ -11,7 +11,7 @@
   <meta property="og:title" content="Giryeong (Daniel) Park — Nutrition Science &amp; Research" />
   <meta
     property="og:description"
-    content="Nutrition Science student &amp; Undergraduate Research Fellow at Monash University. Experience in nutrition research, food-service operations, and student leadership."
+    content="Nutrition Science student &amp; Undergraduate Research Fellow at Monash University. Experience in nutrition research, B2B interpreting, food-service leadership, and campus governance."
   />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://giryeong1234.github.io/giryeong/" />
@@ -45,7 +45,7 @@
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="./styles.css?v=2" />
+  <link rel="stylesheet" href="./styles.css?v=3" />
   <script>
     (function () {
       try {
@@ -68,10 +68,10 @@
       </a>
 
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
         <a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a>
-        <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
         <a href="#leadership" class="nav-link" data-i18n="nav.leadership">Leadership</a>
+        <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">Profile</a>
         <a href="#education" class="nav-link" data-i18n="nav.education">Education</a>
         <a href="#highlights" class="nav-link" data-i18n="nav.highlights">Highlights</a>
       </nav>
@@ -93,11 +93,11 @@
           aria-label="Toggle color theme"
           title="Toggle light/dark mode"
         >
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="4"></circle>
             <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
           </svg>
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
@@ -107,6 +107,7 @@
           target="_blank"
           rel="noopener noreferrer"
           class="btn btn-sm btn-primary header-cta"
+          data-i18n="nav.connect"
         >
           Connect
         </a>
@@ -119,7 +120,7 @@
           aria-expanded="false"
           aria-controls="site-nav"
         >
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
             <line x1="4" y1="7" x2="20" y2="7"></line>
             <line x1="4" y1="12" x2="20" y2="12"></line>
             <line x1="4" y1="17" x2="20" y2="17"></line>
@@ -132,30 +133,29 @@
   <main id="main-content">
     <!-- Hero -->
     <section class="hero">
-      <div class="hero-ambient" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-content reveal">
-          <div class="status-pill">
-            <span class="status-dot" aria-hidden="true"></span>
+          <p class="hero-kicker">
+            <span class="kicker-rule" aria-hidden="true"></span>
             <span data-i18n="hero.status">Undergraduate Research Fellow &middot; Monash University</span>
-          </div>
+          </p>
 
           <h1 class="hero-title">
             Giryeong <span class="hero-nickname">(Daniel)</span> Park
           </h1>
 
           <p class="hero-meta">
-            <span>He/Him</span>
-            <span class="meta-sep" aria-hidden="true">&bull;</span>
             <span data-i18n="hero.degree">Bachelor of Nutrition Science</span>
-            <span class="meta-sep" aria-hidden="true">&bull;</span>
+            <span class="meta-sep" aria-hidden="true">/</span>
             <span data-i18n="hero.location">Melbourne, Australia</span>
+            <span class="meta-sep" aria-hidden="true">/</span>
+            <span>He/Him</span>
           </p>
 
           <p class="hero-lead" data-i18n="hero.lead">
-            Second-year Bachelor of Nutrition Science student at <strong>Monash University</strong> with experience across
-            nutrition education, food-service operations, and student leadership. Passionate about
-            <em>evidence-based practice</em>, chrononutrition research, and building healthier student communities.
+            Nutrition Science undergraduate and Summer Vacation Research Scholar at <strong>Monash University</strong>,
+            combining <em>chrononutrition research</em>, bilingual Korean&ndash;English interpreting, and hands-on
+            operational leadership across Australia, South Korea, and Cambodia.
           </p>
 
           <div class="hero-actions">
@@ -168,355 +168,343 @@
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
               </svg>
-              <span data-i18n="hero.linkedin">LinkedIn Profile</span>
-            </a>
-
-            <a
-              href="https://github.com/giryeong1234"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-secondary"
-            >
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
-              </svg>
-              GitHub
+              <span data-i18n="hero.linkedin">LinkedIn</span>
             </a>
 
             <button type="button" class="btn btn-secondary" id="print-cv" data-i18n="hero.print">
               Print / Save CV
             </button>
 
-            <a href="#experience" class="btn btn-ghost">
-              <span data-i18n="hero.explore">Explore Experience</span>
-              <span aria-hidden="true">&darr;</span>
+            <a
+              href="https://github.com/giryeong1234"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-ghost"
+            >
+              GitHub &rarr;
             </a>
           </div>
         </div>
 
-        <aside class="hero-card reveal" aria-label="Current snapshot">
-          <div class="profile-card-head">
-            <div class="avatar-monogram" aria-hidden="true">
-              <span>GP</span>
-            </div>
-            <div>
-              <p class="card-kicker">Current Snapshot</p>
-              <h2 class="card-name">Giryeong Park</h2>
-              <p class="card-sub">School of Clinical Sciences &middot; Monash</p>
-            </div>
+        <aside class="dossier-panel reveal" aria-label="Executive dossier">
+          <div class="dossier-head">
+            <span class="dossier-eyebrow" data-i18n="dossier.eyebrow">Current Dossier</span>
+            <span class="dossier-term">2025 &ndash; 2027</span>
           </div>
 
-          <ul class="snapshot-list">
-            <li>
-              <span class="snapshot-label">Research</span>
-              <span class="snapshot-value">Summer Vacation Research Scholar &mdash; Shift-Worker Sleep &amp; Eating Patterns (Prof. Maxine Bonham)</span>
-            </li>
-            <li>
-              <span class="snapshot-label">Leadership</span>
-              <span class="snapshot-value">SEEC 2nd Year Rep &middot; MNDS Treasurer &middot; AIS Peer Mentor &middot; Int&rsquo;l Student Ambassador</span>
-            </li>
-            <li>
-              <span class="snapshot-label">Languages</span>
-              <span class="snapshot-value">English &amp; Korean (Native / Bilingual)</span>
-            </li>
-            <li>
-              <span class="snapshot-label">Location</span>
-              <span class="snapshot-value">Melbourne, Victoria, Australia</span>
-            </li>
-          </ul>
+          <dl class="dossier-list">
+            <div class="dossier-row">
+              <dt data-i18n="dossier.research">Research</dt>
+              <dd>Summer Vacation Research Scholar &mdash; Shift-worker sleep &amp; eating patterns (Prof. Maxine Bonham)</dd>
+            </div>
+            <div class="dossier-row">
+              <dt data-i18n="dossier.institution">Institution</dt>
+              <dd>Monash University &middot; School of Clinical Sciences</dd>
+            </div>
+            <div class="dossier-row">
+              <dt data-i18n="dossier.governance">Governance</dt>
+              <dd>SEEC 2nd Year Rep &middot; MNDS Treasurer &middot; AIS Peer Mentor &middot; UMAC Ambassador</dd>
+            </div>
+            <div class="dossier-row">
+              <dt data-i18n="dossier.languages">Languages</dt>
+              <dd>English &amp; Korean (Native / Bilingual &middot; KOTRA B2B Interpreter)</dd>
+            </div>
+          </dl>
         </aside>
       </div>
 
       <div class="container">
-        <div class="metrics-bar reveal" aria-label="Profile highlights">
+        <div class="metrics-bar reveal" aria-label="Career summary">
           <div class="metric">
-            <span class="metric-value">Monash</span>
-            <span class="metric-label">B. Nutrition Science (2025&ndash;2027)</span>
+            <span class="metric-value">Monash Scholar</span>
+            <span class="metric-label" data-i18n="metric.scholar">Summer Vacation Research Fellowship</span>
           </div>
           <div class="metric">
-            <span class="metric-value">Scholar</span>
-            <span class="metric-label">Summer Vacation Research Fellowship</span>
+            <span class="metric-value">3 Countries</span>
+            <span class="metric-label" data-i18n="metric.countries">Work experience across AU, KR &amp; KH</span>
           </div>
           <div class="metric">
             <span class="metric-value">EN / KO</span>
-            <span class="metric-label">Bilingual &amp; B2B Interpreter</span>
+            <span class="metric-label" data-i18n="metric.bilingual">Bilingual &amp; KOTRA B2B Interpreter</span>
           </div>
           <div class="metric">
-            <span class="metric-value">13+</span>
-            <span class="metric-label">Campus &amp; Community Roles</span>
+            <span class="metric-value">4 Campus Roles</span>
+            <span class="metric-label" data-i18n="metric.roles">SEEC, MNDS Treasurer, AIS &amp; UMAC</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About & Focus -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-eyebrow" data-i18n="about.eyebrow">01 &middot; Profile</span>
-          <h2 class="section-title" data-i18n="about.title">Bridging nutrition science, practical food literacy, and people-first leadership.</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-narrative reveal">
-            <p>
-              I am a second-year <strong>Bachelor of Nutrition Science</strong> student in the School of Clinical Sciences at
-              Monash University. Awarded a <strong>Department of Nutrition, Dietetics and Food Summer Vacation Research Scholarship</strong>,
-              I am currently investigating sleeping and eating patterns among shift workers participating in a weight-loss intervention.
-            </p>
-            <p>
-              Outside the lab and lecture theatre, I enjoy translating evidence-based nutrition into practical, budget-friendly
-              habits &mdash; from co-leading hands-on student cooking classes with MNDS &amp; MSA to mentoring incoming first-year
-              undergraduates and representing my cohort on the Student Experience &amp; Engagement Committee (SEEC).
-            </p>
-            <p>
-              With frontline and management experience across hospitality in Australia, South Korea, and Cambodia &mdash; plus
-              bilingual Korean&ndash;English interpreting for KOTRA &mdash; I bring operational discipline, financial stewardship,
-              and cross-cultural communication to every team I join.
-            </p>
-          </div>
-
-          <div class="pillars-grid reveal">
-            <article class="pillar-card">
-              <div class="pillar-icon" aria-hidden="true">01</div>
-              <h3>Nutrition Research</h3>
-              <p>Sleep and activity diaries, actigraphy data workflows, chrononutrition in shift workers, and evidence synthesis.</p>
-            </article>
-            <article class="pillar-card">
-              <div class="pillar-icon" aria-hidden="true">02</div>
-              <h3>Food Literacy &amp; Education</h3>
-              <p>Designing accessible cooking workshops, healthy student recipes, and community wellbeing initiatives.</p>
-            </article>
-            <article class="pillar-card">
-              <div class="pillar-icon" aria-hidden="true">03</div>
-              <h3>Operations &amp; Stewardship</h3>
-              <p>Society budgeting and grant reporting, cafe &amp; restaurant management, staff training, and B2B interpreting.</p>
-            </article>
-          </div>
-        </div>
-
-        <div class="skills-panel reveal">
-          <div class="skills-group">
-            <h3 class="skills-heading">Core Competencies</h3>
-            <div class="tag-list">
-              <span class="tag tag-accent">Nutrition Research</span>
-              <span class="tag tag-accent">Evidence-Based Practice</span>
-              <span class="tag tag-accent">Nutrition Education</span>
-              <span class="tag">Leadership</span>
-              <span class="tag">Mentoring</span>
-              <span class="tag">Communication</span>
-              <span class="tag">Microsoft Excel</span>
-              <span class="tag">Financial Analysis</span>
-              <span class="tag">Project Management</span>
-              <span class="tag">Event Budgeting</span>
-              <span class="tag">Food-Service Operations</span>
-              <span class="tag">B2B Interpreting (EN/KO)</span>
-            </div>
-          </div>
-
-          <div class="languages-group">
-            <h3 class="skills-heading">Languages</h3>
-            <div class="language-pills">
-              <div class="language-item">
-                <strong>English</strong>
-                <span>Native or bilingual</span>
-              </div>
-              <div class="language-item">
-                <strong>Korean</strong>
-                <span>Native or bilingual</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience -->
+    <!-- Experience (Centerpiece) -->
     <section class="section section-alt" id="experience">
       <div class="container">
         <div class="section-header-row reveal">
           <div class="section-header">
-            <span class="section-eyebrow" data-i18n="exp.eyebrow">02 &middot; Experience</span>
-            <h2 class="section-title" data-i18n="exp.title">Research, interpreting, and hospitality leadership.</h2>
+            <span class="section-eyebrow" data-i18n="exp.eyebrow">Experience</span>
+            <h2 class="section-title" data-i18n="exp.title">Research, B2B interpreting, and operational leadership.</h2>
           </div>
 
           <div class="filter-bar" role="tablist" aria-label="Filter experience by category">
-            <button type="button" class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true" data-i18n="exp.filter.all">All</button>
-            <button type="button" class="filter-btn" data-filter="research" role="tab" aria-selected="false" data-i18n="exp.filter.research">Research &amp; Consulting</button>
+            <button type="button" class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true" data-i18n="exp.filter.all">All Roles</button>
+            <button type="button" class="filter-btn" data-filter="research" role="tab" aria-selected="false" data-i18n="exp.filter.research">Research &amp; Interpreting</button>
             <button type="button" class="filter-btn" data-filter="operations" role="tab" aria-selected="false" data-i18n="exp.filter.ops">Hospitality &amp; Operations</button>
           </div>
         </div>
 
-        <div class="timeline" id="experience-list">
-          <!-- Monash Research -->
-          <article class="exp-card exp-featured reveal" data-category="research">
-            <div class="exp-top">
-              <div>
-                <span class="exp-badge">Research Scholarship</span>
-                <h3 class="exp-role">Undergraduate Research Fellow</h3>
-                <p class="exp-org">Monash University &middot; Internship</p>
-              </div>
-              <div class="exp-meta">
-                <span class="exp-date">Nov 2026 &ndash; Present</span>
-                <span class="exp-loc">Melbourne, VIC &middot; On-site</span>
-              </div>
+        <div class="experience-ledger" id="experience-list">
+          <!-- Featured Flagship Role: Monash Research -->
+          <article class="exp-entry exp-flagship reveal" data-category="research">
+            <div class="exp-rail">
+              <span class="exp-period">Nov 2026 &ndash; Present</span>
+              <span class="exp-place">Melbourne, VIC</span>
+              <span class="exp-type-note">Research Scholarship</span>
             </div>
-            <p class="exp-desc">
-              Selected for a Summer Vacation Research Scholarship in the Department of Nutrition, Dietetics and Food
-              at Monash University, under the supervision of <strong>Professor Maxine Bonham</strong>.
-            </p>
-            <ul class="exp-bullets">
-              <li>Examine sleeping and eating patterns among shift workers taking part in a weight-loss intervention.</li>
-              <li>Review sleep and activity diaries, work with actigraphy datasets, and synthesise relevant nutrition literature.</li>
-            </ul>
-            <div class="tag-list tag-list-sm">
-              <span class="tag">Actigraphy Data</span>
-              <span class="tag">Chrononutrition</span>
-              <span class="tag">Literature Review</span>
-              <span class="tag">Clinical Research</span>
+
+            <div class="exp-body">
+              <div class="exp-heading-block">
+                <span class="flagship-label">Featured Appointment</span>
+                <h3 class="exp-role">Undergraduate Research Fellow</h3>
+                <p class="exp-org">Monash University &middot; Department of Nutrition, Dietetics and Food</p>
+              </div>
+
+              <p class="exp-desc">
+                Awarded a competitive <strong>Summer Vacation Research Scholarship</strong> within the School of Clinical
+                Sciences, investigating chrononutrition under the supervision of <strong>Professor Maxine Bonham</strong>.
+              </p>
+
+              <div class="research-specs">
+                <div class="spec-item">
+                  <span class="spec-key">Study Focus</span>
+                  <span class="spec-val">Sleep &amp; eating patterns in shift workers undergoing weight-loss intervention</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-key">Methodology</span>
+                  <span class="spec-val">Actigraphy datasets, sleep/activity diaries, and nutrition literature synthesis</span>
+                </div>
+              </div>
+
+              <div class="meta-tags">
+                <span>Chrononutrition</span>
+                <span>Actigraphy Data</span>
+                <span>Clinical Research</span>
+                <span>Literature Synthesis</span>
+              </div>
             </div>
           </article>
 
           <!-- KOTRA -->
-          <article class="exp-card reveal" data-category="research">
-            <div class="exp-top">
-              <div>
-                <h3 class="exp-role">B2B Business Interpreter</h3>
-                <p class="exp-org">KOTRA &middot; Contract</p>
-              </div>
-              <div class="exp-meta">
-                <span class="exp-date">Nov 2026</span>
-                <span class="exp-loc">Melbourne, VIC &middot; On-site</span>
-              </div>
+          <article class="exp-entry reveal" data-category="research">
+            <div class="exp-rail">
+              <span class="exp-period">Nov 2026</span>
+              <span class="exp-place">Melbourne, VIC</span>
+              <span class="exp-type-note">Contract &middot; On-site</span>
             </div>
-            <p class="exp-desc">
-              Provided consecutive Korean&ndash;English interpreting for B2B export consultations between Korean companies
-              and Australian buyers.
-            </p>
-            <ul class="exp-bullets">
-              <li>Facilitated commercial discussions covering product positioning, pricing, MOQ, Incoterms, import requirements, distribution, and follow-up opportunities.</li>
-              <li>Completed official KOTRA consultation records while ensuring accurate, neutral, and confidential communication.</li>
-            </ul>
-            <div class="tag-list tag-list-sm">
-              <span class="tag">Consecutive Interpreting</span>
-              <span class="tag">B2B Export</span>
-              <span class="tag">Korean &harr; English</span>
+
+            <div class="exp-body">
+              <div class="exp-heading-block">
+                <h3 class="exp-role">B2B Business Interpreter</h3>
+                <p class="exp-org">KOTRA (Korea Trade-Investment Promotion Agency)</p>
+              </div>
+
+              <p class="exp-desc">
+                Delivered consecutive Korean&ndash;English interpreting for commercial export consultations connecting
+                Korean manufacturers with Australian buyers.
+              </p>
+              <ul class="exp-bullets">
+                <li>Facilitated high-stakes negotiations covering product positioning, pricing, MOQ, Incoterms, import compliance, distribution channels, and follow-up agreements.</li>
+                <li>Authored official KOTRA consultation reports with precision, neutrality, and strict commercial confidentiality.</li>
+              </ul>
+              <div class="meta-tags">
+                <span>Consecutive Interpreting</span>
+                <span>B2B Export</span>
+                <span>Korean &harr; English</span>
+              </div>
             </div>
           </article>
 
           <!-- Han Guuk Gwan -->
-          <article class="exp-card reveal" data-category="operations">
-            <div class="exp-top">
-              <div>
-                <h3 class="exp-role">Han Guuk Gwan</h3>
-                <p class="exp-org">Part-time &middot; Progression across 2 roles</p>
-              </div>
-              <div class="exp-meta">
-                <span class="exp-date">Oct 2025 &ndash; Present</span>
-                <span class="exp-loc">Melbourne, VIC &middot; On-site</span>
-              </div>
+          <article class="exp-entry reveal" data-category="operations">
+            <div class="exp-rail">
+              <span class="exp-period">Oct 2025 &ndash; Present</span>
+              <span class="exp-place">Melbourne, VIC</span>
+              <span class="exp-type-note">Part-time &middot; 2 roles</span>
             </div>
 
-            <div class="subroles">
-              <div class="subrole">
-                <div class="subrole-head">
-                  <h4>Senior Front of House Team Member &amp; Trainer</h4>
-                  <span class="subrole-date">Aug 2026 &ndash; Present</span>
-                </div>
-                <p>
-                  Train and onboard new team members in customer service, POS procedures, menu knowledge, and daily operations.
-                  Support smooth shift execution, coordinate front-of-house and kitchen teams, and resolve customer concerns during peak service.
-                </p>
+            <div class="exp-body">
+              <div class="exp-heading-block">
+                <h3 class="exp-role">Han Guuk Gwan</h3>
+                <p class="exp-org">Promoted to Senior Team Member &amp; Trainer</p>
               </div>
 
-              <div class="subrole">
-                <div class="subrole-head">
-                  <h4>Front of House Team Member</h4>
-                  <span class="subrole-date">Oct 2025 &ndash; Jul 2026</span>
+              <div class="progression-list">
+                <div class="progression-step">
+                  <div class="progression-head">
+                    <h4>Senior Front of House Team Member &amp; Trainer</h4>
+                    <span class="progression-date">Aug 2026 &ndash; Present</span>
+                  </div>
+                  <p>
+                    Onboard and train new staff across service standards, POS workflows, menu knowledge, and floor operations.
+                    Lead peak-service coordination between front-of-house and kitchen teams while resolving guest escalations.
+                  </p>
                 </div>
-                <p>
-                  Delivered friendly, efficient customer service in a fast-paced Korean restaurant &mdash; managing table service,
-                  orders, payments, customer enquiries, and kitchen communication.
-                </p>
+
+                <div class="progression-step">
+                  <div class="progression-head">
+                    <h4>Front of House Team Member</h4>
+                    <span class="progression-date">Oct 2025 &ndash; Jul 2026</span>
+                  </div>
+                  <p>
+                    Delivered attentive, high-volume dining service &mdash; managing table pacing, order accuracy, payments,
+                    and real-time kitchen communication.
+                  </p>
+                </div>
               </div>
             </div>
           </article>
 
           <!-- The Ceylon -->
-          <article class="exp-card reveal" data-category="operations">
-            <div class="exp-top">
-              <div>
-                <h3 class="exp-role">더 실론 The Ceylon</h3>
-                <p class="exp-org">Cafe Operations &amp; Management &middot; 4 roles</p>
-              </div>
-              <div class="exp-meta">
-                <span class="exp-date">Jun 2024 &ndash; Apr 2025</span>
-                <span class="exp-loc">Incheon, South Korea</span>
-              </div>
+          <article class="exp-entry reveal" data-category="operations">
+            <div class="exp-rail">
+              <span class="exp-period">Jun 2024 &ndash; Apr 2025</span>
+              <span class="exp-place">Incheon, South Korea</span>
+              <span class="exp-type-note">Progression &middot; 4 roles</span>
             </div>
 
-            <div class="subroles">
-              <div class="subrole">
-                <div class="subrole-head">
-                  <h4>Assistant Manager <span class="subrole-type">(Contract &middot; Remote)</span></h4>
-                  <span class="subrole-date">Feb 2025 &ndash; Apr 2025</span>
-                </div>
-                <p>
-                  Supported daily cafe management while overseas, mentored the incoming manager and staff, oversaw scheduling
-                  and training, and coordinated communication with overseas stakeholders.
-                </p>
+            <div class="exp-body">
+              <div class="exp-heading-block">
+                <h3 class="exp-role">더 실론 The Ceylon</h3>
+                <p class="exp-org">End-to-End Cafe Operations, Finance &amp; Team Management</p>
               </div>
 
-              <div class="subrole">
-                <div class="subrole-head">
-                  <h4>Manager <span class="subrole-type">(Full-time &middot; On-site)</span> &amp; Baker <span class="subrole-type">(Part-time)</span></h4>
-                  <span class="subrole-date">Aug 2024 &ndash; Feb 2025</span>
+              <div class="progression-list">
+                <div class="progression-step">
+                  <div class="progression-head">
+                    <h4>Assistant Manager <span class="step-qualifier">(Contract &middot; Remote)</span></h4>
+                    <span class="progression-date">Feb 2025 &ndash; Apr 2025</span>
+                  </div>
+                  <p>
+                    Supported store continuity remotely from Australia, mentoring the incoming manager and team, overseeing
+                    rostering and training standards, and liaising with overseas stakeholders.
+                  </p>
                 </div>
-                <p>
-                  Oversaw end-to-end cafe operations, strategic planning, team leadership, financial management, and in-house baking
-                  (Sep 2024 &ndash; Feb 2025) to improve efficiency, revenue growth, and guest satisfaction.
-                </p>
-              </div>
 
-              <div class="subrole">
-                <div class="subrole-head">
-                  <h4>Front of House <span class="subrole-type">(Full-time &middot; On-site)</span></h4>
-                  <span class="subrole-date">Jun 2024 &ndash; Jul 2024</span>
+                <div class="progression-step">
+                  <div class="progression-head">
+                    <h4>Manager <span class="step-qualifier">(Full-time)</span> &amp; Baker <span class="step-qualifier">(Part-time)</span></h4>
+                    <span class="progression-date">Aug 2024 &ndash; Feb 2025</span>
+                  </div>
+                  <p>
+                    Directed daily operations, staffing, financial management, strategic planning, and in-house baking
+                    (Sep 2024 &ndash; Feb 2025) to strengthen operational efficiency, revenue performance, and customer retention.
+                  </p>
                 </div>
-                <p>
-                  Managed counter service, payments, kitchen coordination, and social media / strategic marketing support.
-                </p>
+
+                <div class="progression-step">
+                  <div class="progression-head">
+                    <h4>Front of House <span class="step-qualifier">(Full-time)</span></h4>
+                    <span class="progression-date">Jun 2024 &ndash; Jul 2024</span>
+                  </div>
+                  <p>
+                    Managed counter service, point-of-sale operations, kitchen coordination, and local social media marketing.
+                  </p>
+                </div>
               </div>
             </div>
           </article>
 
           <!-- Mission Cafe -->
-          <article class="exp-card reveal" data-category="operations">
-            <div class="exp-top">
-              <div>
-                <h3 class="exp-role">Food and Beverage Assistant</h3>
-                <p class="exp-org">Mission Cafe &middot; Part-time</p>
-              </div>
-              <div class="exp-meta">
-                <span class="exp-date">Jul 2023 &ndash; Oct 2023</span>
-                <span class="exp-loc">Phnom Penh, Cambodia &middot; On-site</span>
-              </div>
+          <article class="exp-entry reveal" data-category="operations">
+            <div class="exp-rail">
+              <span class="exp-period">Jul 2023 &ndash; Oct 2023</span>
+              <span class="exp-place">Phnom Penh, Cambodia</span>
+              <span class="exp-type-note">Part-time &middot; On-site</span>
             </div>
-            <p class="exp-desc">
-              Managed counter operations, crafted coffee and beverages, maintained a clean dining space, and supported
-              peak weekly lunch service and catering operations.
+
+            <div class="exp-body">
+              <div class="exp-heading-block">
+                <h3 class="exp-role">Food and Beverage Assistant</h3>
+                <p class="exp-org">Mission Cafe</p>
+              </div>
+              <p class="exp-desc">
+                Managed counter service, espresso and beverage preparation, dining hygiene standards, and high-volume
+                weekly lunch and catering operations.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership & Governance -->
+    <section class="section" id="leadership">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" data-i18n="lead.eyebrow">Leadership &amp; Governance</span>
+          <h2 class="section-title" data-i18n="lead.title">Representing students and stewarding the Monash nutrition community.</h2>
+        </div>
+
+        <div class="editorial-grid-2">
+          <article class="ruled-item reveal">
+            <div class="ruled-meta">
+              <span class="ruled-tag">Academic Governance</span>
+              <span class="ruled-date">2025 &ndash; 2026</span>
+            </div>
+            <h3>Student Representative &mdash; SEEC</h3>
+            <p class="ruled-org">Student Experience &amp; Engagement Committee &middot; Monash Nutrition Science</p>
+            <p>
+              Elected consecutively as First-Year (2025) and Second-Year (2026) Student Representative, synthesising
+              cohort feedback and advising academic staff on curriculum quality and student experience.
+            </p>
+          </article>
+
+          <article class="ruled-item reveal">
+            <div class="ruled-meta">
+              <span class="ruled-tag">Financial Stewardship</span>
+              <span class="ruled-date">Nov 2025 &ndash; Oct 2026</span>
+            </div>
+            <h3>Treasurer</h3>
+            <p class="ruled-org">Monash Nutrition and Dietetics Society (MNDS)</p>
+            <p>
+              Oversees annual society budgets, Club &amp; Society grant acquittals, financial reporting, and fundraising
+              initiatives including the <em>Celebrating Diversity in Nutrition Conference</em> bake sale.
+            </p>
+          </article>
+
+          <article class="ruled-item reveal">
+            <div class="ruled-meta">
+              <span class="ruled-tag">Student Mentorship</span>
+              <span class="ruled-date">Semester 1, 2026</span>
+            </div>
+            <h3>Peer Mentor &mdash; Jump-start</h3>
+            <p class="ruled-org">Access, Inclusion and Success (AIS) &middot; Monash University</p>
+            <p>
+              Guided a cohort of 20 incoming undergraduates during Monash Jump-start on Clayton campus, leading
+              Orientation Preparation workshops and ongoing first-semester transition support.
+            </p>
+          </article>
+
+          <article class="ruled-item reveal">
+            <div class="ruled-meta">
+              <span class="ruled-tag">University Representation</span>
+              <span class="ruled-date">Jul 2025 &ndash; Present</span>
+            </div>
+            <h3>International Student Ambassador</h3>
+            <p class="ruled-org">University Marketing &amp; Communications (UMAC) &middot; Monash University</p>
+            <p>
+              Represents Monash&rsquo;s international student body at Open Day, campus tours, webinars, live panels,
+              and prospective-student communications.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section class="section" id="projects">
+    <!-- Selected Projects -->
+    <section class="section section-alt" id="projects">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-eyebrow" data-i18n="proj.eyebrow">03 &middot; Featured Projects</span>
-          <h2 class="section-title" data-i18n="proj.title">Community initiatives turning nutrition and education into action.</h2>
+          <span class="section-eyebrow" data-i18n="proj.eyebrow">Selected Projects</span>
+          <h2 class="section-title" data-i18n="proj.title">Translating nutrition science, web tools, and education into practice.</h2>
         </div>
 
         <div class="projects-grid">
@@ -527,19 +515,18 @@
             </div>
             <h3>MNDS &times; MSA InstaCook Program</h3>
             <p>
-              Co-led the planning and delivery of a hands-on, nutrition-focused cooking class through a collaboration
-              between the <strong>Monash Nutrition and Dietetics Society (MNDS)</strong> and
-              <strong>Monash Student Association (MSA) Leadership &amp; Volunteering</strong>.
+              Co-led the design and delivery of a practical student cooking class in partnership between the
+              <strong>Monash Nutrition and Dietetics Society (MNDS)</strong> and
+              <strong>MSA Leadership &amp; Volunteering</strong>.
             </p>
             <ul class="project-points">
-              <li>Designed accessible, budget-friendly recipes: <em>Honey Soy Tofu with Rice</em> and <em>Peanut Butter Crunch Bars</em>.</li>
-              <li>Coordinated logistics, ingredients, food safety guidance, volunteer teams, and live session facilitation across a 3-month planning cycle.</li>
+              <li>Developed accessible, budget-conscious recipes: <em>Honey Soy Tofu with Rice</em> and <em>Peanut Butter Crunch Bars</em>.</li>
+              <li>Directed end-to-end logistics, ingredient sourcing, food safety protocols, volunteer teams, and live facilitation across a 3-month cycle.</li>
             </ul>
-            <div class="tag-list tag-list-sm">
-              <span class="tag tag-accent">Nutrition Education</span>
-              <span class="tag">Food Literacy</span>
-              <span class="tag">Event Operations</span>
-              <span class="tag">Leadership</span>
+            <div class="meta-tags">
+              <span>Nutrition Education</span>
+              <span>Food Literacy</span>
+              <span>Event Operations</span>
             </div>
           </article>
 
@@ -550,12 +537,12 @@
             </div>
             <h3>Nutrificient &mdash; Nutrition Services Platform</h3>
             <p>
-              Designed and built a multi-page nutrition consulting and services web application using
+              Designed and built a multi-page nutrition consulting and services web application with
               <strong>React 19</strong> and <strong>React Router</strong>, deployed on Cloudflare Pages.
             </p>
             <ul class="project-points">
-              <li>Structured dedicated routes for Services, Consulting, Blog, About, and Contact workflows.</li>
-              <li>Built a responsive frontend focused on clear nutrition service communication and client accessibility.</li>
+              <li>Architected dedicated routes for Services, Consulting, Blog, About, and Contact workflows.</li>
+              <li>Crafted a clean, responsive frontend focused on clear nutrition service presentation and accessibility.</li>
             </ul>
             <a
               href="https://nutrificient.pages.dev/services"
@@ -563,12 +550,12 @@
               rel="noopener noreferrer"
               class="project-link"
             >
-              Visit live app &rarr;
+              Visit live application &rarr;
             </a>
-            <div class="tag-list tag-list-sm">
-              <span class="tag tag-accent">React 19</span>
-              <span class="tag">Web Development</span>
-              <span class="tag">Nutrition Consulting</span>
+            <div class="meta-tags">
+              <span>React 19</span>
+              <span>Web Development</span>
+              <span>Nutrition Consulting</span>
             </div>
           </article>
 
@@ -579,101 +566,107 @@
             </div>
             <h3>Grace English Beginner Program</h3>
             <p>
-              Led the development and implementation of a structured English Beginner Program for elementary students
-              at <strong>Grace Mission International School</strong> in Cambodia.
+              Spearheaded a structured English curriculum for elementary students at
+              <strong>Grace Mission International School</strong> in Phnom Penh, Cambodia.
             </p>
             <ul class="project-points">
-              <li>Formed and coordinated a collaborative teaching team alongside school administrators and teachers to set clear learning objectives.</li>
-              <li>Conducted regular student assessments and refined teaching strategies based on progress tracking.</li>
+              <li>Coordinated a collaborative teaching team alongside school administrators to establish measurable learning outcomes.</li>
+              <li>Implemented ongoing assessments and adapted lesson plans based on student progression.</li>
             </ul>
-            <div class="tag-list tag-list-sm">
-              <span class="tag tag-accent">Project Management</span>
-              <span class="tag">Education</span>
-              <span class="tag">Team Leadership</span>
+            <div class="meta-tags">
+              <span>Curriculum Design</span>
+              <span>Project Management</span>
+              <span>Team Leadership</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Leadership & Volunteering -->
-    <section class="section section-alt" id="leadership">
+    <!-- Profile & Focus -->
+    <section class="section" id="about">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-eyebrow" data-i18n="lead.eyebrow">04 &middot; Leadership &amp; Volunteering</span>
-          <h2 class="section-title" data-i18n="lead.title">Serving the Monash student and nutrition community.</h2>
+          <span class="section-eyebrow" data-i18n="about.eyebrow">Profile &amp; Focus</span>
+          <h2 class="section-title" data-i18n="about.title">Bridging clinical nutrition science, food literacy, and operational discipline.</h2>
         </div>
 
-        <div class="leadership-grid">
-          <article class="lead-card reveal">
-            <div class="lead-top">
-              <span class="lead-role-tag">Committee Representative</span>
-              <span class="lead-date">2025 &ndash; 2026</span>
-            </div>
-            <h3>Student Representative &mdash; SEEC</h3>
-            <p class="lead-org">Student Experience &amp; Engagement Committee &middot; Monash Nutrition Science</p>
+        <div class="about-grid">
+          <div class="about-narrative reveal">
             <p>
-              Elected First-Year (2025) and Second-Year (2026) Student Representative, gathering cohort feedback and
-              partnering with academic staff to enhance curriculum design and student engagement.
+              I am a second-year <strong>Bachelor of Nutrition Science</strong> student in the School of Clinical Sciences at
+              Monash University. Awarded a <strong>Department of Nutrition, Dietetics and Food Summer Vacation Research Scholarship</strong>,
+              my current research examines sleeping and eating patterns among shift workers participating in a weight-loss intervention.
             </p>
-          </article>
+            <p>
+              Beyond clinical research, I focus on translating nutrition evidence into practical, budget-friendly habits
+              &mdash; from co-leading student cooking workshops with MNDS &amp; MSA to mentoring first-year undergraduates
+              and representing my cohort on the Student Experience &amp; Engagement Committee (SEEC).
+            </p>
+            <p>
+              Having worked across hospitality operations in Australia, South Korea, and Cambodia &mdash; alongside bilingual
+              Korean&ndash;English B2B interpreting for KOTRA &mdash; I bring calm execution, financial accountability, and
+              cross-cultural clarity to research and leadership teams.
+            </p>
+          </div>
 
-          <article class="lead-card reveal">
-            <div class="lead-top">
-              <span class="lead-role-tag">Executive Committee</span>
-              <span class="lead-date">Nov 2025 &ndash; Oct 2026</span>
+          <div class="focus-list reveal">
+            <div class="focus-item">
+              <h3>Nutrition &amp; Chrononutrition Research</h3>
+              <p>Sleep and activity diaries, actigraphy data workflows, shift-worker dietary patterns, and evidence synthesis.</p>
             </div>
-            <h3>Treasurer</h3>
-            <p class="lead-org">Monash Nutrition and Dietetics Society (MNDS)</p>
-            <p>
-              Managed society budgeting, financial planning, Club &amp; Society grant reports, and student fundraisers including
-              the <em>Celebrating Diversity in Nutrition Conference</em> collaborative bake sale.
-            </p>
-          </article>
+            <div class="focus-item">
+              <h3>Food Literacy &amp; Public Engagement</h3>
+              <p>Accessible culinary workshops, budget-conscious student nutrition, and campus health initiatives.</p>
+            </div>
+            <div class="focus-item">
+              <h3>Operations, Finance &amp; Bilingual Liaison</h3>
+              <p>Society treasury and grant acquittals, end-to-end hospitality management, and Korean&ndash;English B2B interpreting.</p>
+            </div>
+          </div>
+        </div>
 
-          <article class="lead-card reveal">
-            <div class="lead-top">
-              <span class="lead-role-tag">Mentorship</span>
-              <span class="lead-date">Semester 1, 2026</span>
-            </div>
-            <h3>Peer Mentor &mdash; Jump-start</h3>
-            <p class="lead-org">Access, Inclusion and Success (AIS) &middot; Monash University</p>
-            <p>
-              Led a cohort of 20 incoming undergraduate students during Monash Jump-start on Clayton campus, facilitating
-              Orientation Preparation and ongoing semester mentorship.
+        <div class="capabilities-band reveal">
+          <div class="capabilities-col">
+            <h3 class="col-heading" data-i18n="cap.skills">Core Competencies</h3>
+            <p class="capabilities-inline">
+              Nutrition Research &middot; Evidence-Based Practice &middot; Actigraphy &amp; Literature Synthesis &middot;
+              Nutrition Education &middot; Financial Analysis &amp; Budgeting &middot; Microsoft Excel &middot;
+              Project Management &middot; Hospitality Operations &middot; Team Training &middot; Consecutive Interpreting (EN/KO)
             </p>
-          </article>
+          </div>
 
-          <article class="lead-card reveal">
-            <div class="lead-top">
-              <span class="lead-role-tag">Ambassadorship</span>
-              <span class="lead-date">Jul 2025 &ndash; Present</span>
+          <div class="capabilities-col">
+            <h3 class="col-heading" data-i18n="cap.languages">Languages</h3>
+            <div class="lang-ledger">
+              <div class="lang-row">
+                <strong>English</strong>
+                <span>Native / Bilingual</span>
+              </div>
+              <div class="lang-row">
+                <strong>Korean (한국어)</strong>
+                <span>Native / Bilingual</span>
+              </div>
             </div>
-            <h3>International Student Ambassador</h3>
-            <p class="lead-org">University Marketing &amp; Communications (UMAC) &middot; Monash University</p>
-            <p>
-              Represents Monash&rsquo;s international student community at Open Day, campus tours, webinars, student panels,
-              and prospective-student digital campaigns.
-            </p>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Education & Certifications -->
-    <section class="section" id="education">
+    <!-- Education & Credentials -->
+    <section class="section section-alt" id="education">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-eyebrow" data-i18n="edu.eyebrow">05 &middot; Education &amp; Credentials</span>
-          <h2 class="section-title" data-i18n="edu.title">Academic foundation and continuous learning.</h2>
+          <span class="section-eyebrow" data-i18n="edu.eyebrow">Education &amp; Credentials</span>
+          <h2 class="section-title" data-i18n="edu.title">Academic foundation and continuous professional learning.</h2>
         </div>
 
         <div class="edu-cert-grid">
           <div class="edu-col reveal">
-            <h3 class="col-heading">Education</h3>
+            <h3 class="col-heading">Academic Degrees</h3>
 
-            <article class="edu-card">
-              <div class="edu-top">
+            <article class="ruled-row">
+              <div class="ruled-row-top">
                 <h4>Monash University</h4>
                 <span class="edu-date">Feb 2025 &ndash; Dec 2027</span>
               </div>
@@ -681,20 +674,20 @@
               <p class="edu-detail">School of Clinical Sciences &middot; Department of Nutrition, Dietetics and Food</p>
             </article>
 
-            <article class="edu-card">
-              <div class="edu-top">
+            <article class="ruled-row">
+              <div class="ruled-row-top">
                 <h4>International Baccalaureate (IB)</h4>
                 <span class="edu-date">Aug 2022 &ndash; Jun 2024</span>
               </div>
               <p class="edu-degree">Bilingual Diploma</p>
-              <p class="edu-detail">Completed bilingual curriculum alongside community education leadership in Cambodia.</p>
+              <p class="edu-detail">Completed bilingual diploma alongside community education leadership in Cambodia.</p>
             </article>
           </div>
 
           <div class="cert-col reveal">
             <h3 class="col-heading">Selected Certifications</h3>
 
-            <article class="cert-card">
+            <article class="ruled-row cert-row">
               <div>
                 <h4>Corporate Finance Foundations</h4>
                 <p class="cert-issuer">Corporate Finance Institute&reg; (CFI) &middot; Microsoft Excel</p>
@@ -702,7 +695,7 @@
               <span class="edu-date">Dec 2025</span>
             </article>
 
-            <article class="cert-card">
+            <article class="ruled-row cert-row">
               <div>
                 <h4>Career Essentials in Generative AI</h4>
                 <p class="cert-issuer">Microsoft</p>
@@ -714,10 +707,9 @@
               href="https://www.linkedin.com/in/giryeongpark/details/certifications/"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-link"
+              class="inline-link cert-more"
             >
-              View all 7 licenses &amp; certifications on LinkedIn
-              <span aria-hidden="true">&rarr;</span>
+              View all 7 licenses &amp; certifications on LinkedIn &rarr;
             </a>
           </div>
         </div>
@@ -725,10 +717,10 @@
     </section>
 
     <!-- Recent Highlights -->
-    <section class="section section-alt" id="highlights">
+    <section class="section" id="highlights">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-eyebrow" data-i18n="high.eyebrow">06 &middot; Recent Highlights</span>
+          <span class="section-eyebrow" data-i18n="high.eyebrow">Recent Dispatches</span>
           <h2 class="section-title" data-i18n="high.title">Stories and milestones from campus &amp; community.</h2>
         </div>
 
@@ -737,51 +729,53 @@
             href="https://www.linkedin.com/feed/update/urn:li:activity:7506167954900856832/"
             target="_blank"
             rel="noopener noreferrer"
-            class="highlight-card reveal"
+            class="highlight-item reveal"
           >
             <span class="highlight-tag">Cooking Workshop</span>
             <h3>MNDS &times; MSA Student Cooking Class</h3>
             <p>Co-hosted a practical cooking evening making Honey Soy Tofu with Rice and Peanut Butter Crunch Bars with fellow students.</p>
-            <span class="highlight-cta">Read post on LinkedIn &rarr;</span>
+            <span class="highlight-cta">Read on LinkedIn &rarr;</span>
           </a>
 
           <a
             href="https://www.linkedin.com/feed/update/urn:li:activity:7496752903555125248/"
             target="_blank"
             rel="noopener noreferrer"
-            class="highlight-card reveal"
+            class="highlight-item reveal"
           >
             <span class="highlight-tag">Volunteering</span>
             <h3>Monash University Open Day</h3>
             <p>Volunteered alongside Department of Nutrition, Dietetics and Food staff to welcome prospective students and families.</p>
-            <span class="highlight-cta">Read post on LinkedIn &rarr;</span>
+            <span class="highlight-cta">Read on LinkedIn &rarr;</span>
           </a>
 
           <a
             href="https://www.linkedin.com/feed/update/urn:li:activity:7488426932947046400/"
             target="_blank"
             rel="noopener noreferrer"
-            class="highlight-card reveal"
+            class="highlight-item reveal"
           >
             <span class="highlight-tag">Conference &amp; Fundraising</span>
             <h3>Celebrating Diversity in Nutrition Conference</h3>
             <p>Organised a collaborative MNDS bake sale fundraiser supported by the Monash Nutrition and Dietetics Department.</p>
-            <span class="highlight-cta">Read post on LinkedIn &rarr;</span>
+            <span class="highlight-cta">Read on LinkedIn &rarr;</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Contact CTA -->
+    <!-- Contact -->
     <section class="section contact-section" id="contact">
       <div class="container">
         <div class="contact-box reveal">
-          <span class="section-eyebrow" data-i18n="contact.eyebrow">Let&rsquo;s Connect</span>
-          <h2 data-i18n="contact.title">Open to nutrition research collaborations, community initiatives, and graduate opportunities.</h2>
-          <p data-i18n="contact.desc">
-            Whether you&rsquo;re researching chrononutrition, building food literacy programs, or connecting across
-            Monash and Melbourne&rsquo;s nutrition community, I&rsquo;d love to hear from you.
-          </p>
+          <div class="contact-copy">
+            <span class="section-eyebrow" data-i18n="contact.eyebrow">Correspondence</span>
+            <h2 data-i18n="contact.title">Open to nutrition research collaborations, community initiatives, and graduate opportunities.</h2>
+            <p data-i18n="contact.desc">
+              Whether you&rsquo;re researching chrononutrition, developing food literacy programs, or connecting across
+              Monash and Melbourne&rsquo;s nutrition community, I&rsquo;d welcome a conversation.
+            </p>
+          </div>
           <div class="contact-actions">
             <a
               href="https://www.linkedin.com/in/giryeongpark/"
@@ -799,7 +793,7 @@
               class="btn btn-secondary"
               data-i18n="contact.github"
             >
-              Follow on GitHub
+              GitHub Profile
             </a>
           </div>
         </div>
@@ -809,7 +803,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; <span id="year">2026</span> Giryeong (Daniel) Park. Built for GitHub Pages.</p>
+      <p>&copy; <span id="year">2026</span> Giryeong (Daniel) Park &middot; Melbourne, Australia</p>
       <div class="footer-links">
         <a href="https://www.linkedin.com/in/giryeongpark/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/giryeong1234" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -818,6 +812,6 @@
     </div>
   </footer>
 
-  <script src="./script.js"></script>
+  <script src="./script.js?v=3"></script>
 </body>
 </html>
