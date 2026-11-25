@@ -160,7 +160,7 @@
       "hero.degree": "Bachelor of Nutrition Science",
       "hero.location": "Melbourne, Australia",
       "hero.lead":
-        "Nutrition Science undergraduate and Summer Vacation Research Scholar at <strong>Monash University</strong>, combining <em>evidence-based nutrition research</em>, bilingual Korean&ndash;English interpreting, and hands-on operational leadership across Australia, South Korea, and Cambodia.",
+        "Nutrition Science undergraduate and Summer Vacation Research Scholar at <strong>Monash University</strong>, combining evidence-based nutrition research, bilingual Korean&ndash;English interpreting, and hands-on operational leadership across Australia, South Korea, and Cambodia.",
       "hero.linkedin": "LinkedIn",
       "hero.print": "Print / Save CV",
       "dossier.eyebrow": "Current Dossier",
@@ -208,7 +208,7 @@
       "hero.degree": "영양학 학사 (Bachelor of Nutrition Science)",
       "hero.location": "호주 멜버른",
       "hero.lead":
-        "<strong>모나쉬 대학교(Monash University)</strong> 영양학 학사 및 하계 연구 장학생으로, <em>근거 기반 영양학 연구</em>, 한영 B2B 통역, 그리고 호주·한국·캄보디아에서의 현장 운영 리더십 경험을 결합해 나가고 있습니다.",
+        "<strong>모나쉬 대학교(Monash University)</strong> 영양학 학사 및 하계 연구 장학생으로, 근거 기반 영양학 연구, 한영 B2B 통역, 그리고 호주·한국·캄보디아에서의 현장 운영 리더십 경험을 결합해 나가고 있습니다.",
       "hero.linkedin": "LinkedIn",
       "hero.print": "CV 인쇄 / PDF 저장",
       "dossier.eyebrow": "핵심 프로필 요약",
