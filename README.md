@@ -1,6 +1,6 @@
 # Giryeong (Daniel) Park — Personal Profile
 
-Personal academic & professional portfolio website for **Giryeong (Daniel) Park**, Bachelor of Nutrition Science student and Undergraduate Research Fellow at Monash University.
+Personal academic & professional portfolio website for **Giryeong (Daniel) Park**, Bachelor of Nutrition Science student and Summer Vacation Research Scholar at Monash University.
 
 **Live site:** [https://giryeong1234.github.io/giryeong/](https://giryeong1234.github.io/giryeong/)
 

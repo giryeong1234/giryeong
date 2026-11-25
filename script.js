@@ -156,11 +156,11 @@
       "nav.education": "Education",
       "nav.highlights": "Highlights",
       "nav.connect": "Connect",
-      "hero.status": "Undergraduate Research Fellow · Monash University",
+      "hero.status": "Nutrition Science · Monash University",
       "hero.degree": "Bachelor of Nutrition Science",
       "hero.location": "Melbourne, Australia",
       "hero.lead":
-        "Nutrition Science undergraduate and Summer Vacation Research Scholar at <strong>Monash University</strong>, combining <em>chrononutrition research</em>, bilingual Korean&ndash;English interpreting, and hands-on operational leadership across Australia, South Korea, and Cambodia.",
+        "Nutrition Science undergraduate and Summer Vacation Research Scholar at <strong>Monash University</strong>, combining <em>evidence-based nutrition research</em>, bilingual Korean&ndash;English interpreting, and hands-on operational leadership across Australia, South Korea, and Cambodia.",
       "hero.linkedin": "LinkedIn",
       "hero.print": "Print / Save CV",
       "dossier.eyebrow": "Current Dossier",
@@ -168,7 +168,7 @@
       "dossier.institution": "Institution",
       "dossier.governance": "Governance",
       "dossier.languages": "Languages",
-      "metric.scholar": "Summer Vacation Research Fellowship",
+      "metric.scholar": "Summer Vacation Research Scholarship",
       "metric.countries": "Work experience across AU, KR & KH",
       "metric.bilingual": "Bilingual & KOTRA B2B Interpreter",
       "metric.roles": "SEEC, MNDS Treasurer, AIS & UMAC",
@@ -192,7 +192,7 @@
       "contact.eyebrow": "Correspondence",
       "contact.title": "Open to nutrition research collaborations, community initiatives, and graduate opportunities.",
       "contact.desc":
-        "Whether you’re researching chrononutrition, developing food literacy programs, or connecting across Monash and Melbourne’s nutrition community, I’d welcome a conversation.",
+        "Whether you’re working on nutrition research, developing food literacy programs, or connecting across Monash and Melbourne’s nutrition community, I’d welcome a conversation.",
       "contact.linkedin": "Message on LinkedIn",
       "contact.github": "GitHub Profile"
     },
@@ -204,11 +204,11 @@
       "nav.education": "학력",
       "nav.highlights": "소식",
       "nav.connect": "연락하기",
-      "hero.status": "학부 연구 펠로우 · 모나쉬 대학교 (Monash University)",
+      "hero.status": "영양학 전공 · 모나쉬 대학교 (Monash University)",
       "hero.degree": "영양학 학사 (Bachelor of Nutrition Science)",
       "hero.location": "호주 멜버른",
       "hero.lead":
-        "<strong>모나쉬 대학교(Monash University)</strong> 영양학 학사 및 하계 연구 장학생으로, <em>시간영양학(Chrononutrition) 연구</em>, 한영 B2B 통역, 그리고 호주·한국·캄보디아에서의 현장 운영 리더십 경험을 결합해 나가고 있습니다.",
+        "<strong>모나쉬 대학교(Monash University)</strong> 영양학 학사 및 하계 연구 장학생으로, <em>근거 기반 영양학 연구</em>, 한영 B2B 통역, 그리고 호주·한국·캄보디아에서의 현장 운영 리더십 경험을 결합해 나가고 있습니다.",
       "hero.linkedin": "LinkedIn",
       "hero.print": "CV 인쇄 / PDF 저장",
       "dossier.eyebrow": "핵심 프로필 요약",
@@ -216,7 +216,7 @@
       "dossier.institution": "소속",
       "dossier.governance": "교내 활동",
       "dossier.languages": "언어",
-      "metric.scholar": "하계 연구 장학 펠로우십 (Monash)",
+      "metric.scholar": "하계 연구 장학금 (Monash)",
       "metric.countries": "호주 · 한국 · 캄보디아 실무 경험",
       "metric.bilingual": "한영 이중언어 및 KOTRA B2B 통역",
       "metric.roles": "SEEC · MNDS 재무 · AIS · UMAC",
@@ -240,7 +240,7 @@
       "contact.eyebrow": "연락하기",
       "contact.title": "영양학 연구 협업, 커뮤니티 프로젝트 및 졸업 후 기회에 열려 있습니다.",
       "contact.desc":
-        "시간영양학 연구, 식생활 문해력 프로그램, 또는 모나쉬·멜버른 영양학 커뮤니티 협업에 관심이 있으시다면 언제든 편하게 연락해 주세요.",
+        "영양학 연구, 식생활 문해력 프로그램, 또는 모나쉬·멜버른 영양학 커뮤니티 협업에 관심이 있으시다면 언제든 편하게 연락해 주세요.",
       "contact.linkedin": "LinkedIn 메시지 보내기",
       "contact.github": "GitHub 프로필"
     }
